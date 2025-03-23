@@ -49,8 +49,7 @@
       "name": "NPM Mirror",
       "url": "https://registry.npmmirror.com",
       "scopes": [
-        "ep",
-        "et"
+        "org.eframework"
       ]
     },
     {

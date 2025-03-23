@@ -237,12 +237,13 @@
       }
     },
     "org.eframework.u3d.edit": {
-      "version": "file:../../../U3D.EDIT",
-      "depth": 0,
-      "source": "local",
+      "version": "0.0.1",
+      "depth": 1,
+      "source": "registry",
       "dependencies": {
         "org.eframework.u3d.util": "0.0.1"
-      }
+      },
+      "url": "https://registry.npmmirror.com"
     },
     "org.eframework.u3d.puer": {
       "version": "file:../../",
@@ -256,10 +257,11 @@
       }
     },
     "org.eframework.u3d.util": {
-      "version": "file:../../../U3D.UTIL",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "version": "0.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmmirror.com"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
