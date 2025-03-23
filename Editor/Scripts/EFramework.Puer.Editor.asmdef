@@ -1,0 +1,22 @@
+{
+    "name": "EFramework.Puer.Editor",
+    "rootNamespace": "",
+    "references": [
+        "EFramework.Puer",
+        "EFramework.Utility",
+        "EFramework.Editor",
+        "com.tencent.puerts.core",
+        "com.tencent.puerts.core.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
