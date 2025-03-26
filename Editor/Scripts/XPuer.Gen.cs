@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.Build;
 using Puerts;
 using Puerts.Editor.Generator.DTS;
 using EFramework.Editor;
@@ -1132,8 +1133,16 @@ $@"{{
                         if (XFile.HasDirectory(output) == false || Directory.GetFiles(output).Length == 0)
                         {
                             dirty = true;
-                            Puerts.Editor.Generator.UnityMenu.GenV1();
-                            XLog.Debug("XPuer.Gen: invoke Tools/PuerTS/Generate (all in one) automatically.");
+                            if (PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.selectedBuildTargetGroup)) == ScriptingImplementation.IL2CPP)
+                            {
+                                PuertsIl2cpp.Editor.Generator.UnityMenu.GenV2();
+                                XLog.Debug("XPuer.Gen: invoke Tools/PuerTS/Generate For xIl2cpp mode (all in one with full wrapper) automatically.");
+                            }
+                            else
+                            {
+                                Puerts.Editor.Generator.UnityMenu.GenV1();
+                                XLog.Debug("XPuer.Gen: invoke Tools/PuerTS/Generate (all in one) automatically.");
+                            }
                         }
                     }
 

@@ -46,8 +46,8 @@
   },
   "scopedRegistries": [
     {
-      "name": "NPM Mirror",
-      "url": "https://registry.npmmirror.com",
+      "name": "NPM",
+      "url": "https://registry.npmjs.com",
       "scopes": [
         "org.eframework"
       ]

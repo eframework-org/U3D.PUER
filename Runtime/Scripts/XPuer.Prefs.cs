@@ -45,7 +45,7 @@ namespace EFramework.Puer
         /// </code>
         /// 更多信息请参考模块文档。
         /// </remarks>
-        public class Prefs : XPrefs.IPanel
+        public class Prefs : XPrefs.Panel
         {
             /// <summary>
             /// 发布模式的配置键。

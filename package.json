@@ -26,8 +26,8 @@
   "dependencies": {
     "com.tencent.puerts.core": "2.2.0",
     "com.tencent.puerts.ts-loader": "2.0.5",
-    "org.eframework.u3d.util": "0.0.1",
-    "org.eframework.u3d.edit": "0.0.1"
+    "org.eframework.u3d.util": "0.0.2",
+    "org.eframework.u3d.edit": "0.0.2"
   },
   "puerAdapter": ".puer",
   "puerExports": [

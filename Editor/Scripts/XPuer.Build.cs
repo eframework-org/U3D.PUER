@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using EFramework.Utility;
 using EFramework.Editor;
 using UnityEditor;
+using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
 using static EFramework.Puer.XPuer;
@@ -192,7 +193,14 @@ namespace EFramework.Puer.Editor
             /// <param name="report">构建报告对象</param>
             public override void Process(XEditor.Tasks.Report report)
             {
-                Puerts.Editor.Generator.UnityMenu.GenV1();
+                if (PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.selectedBuildTargetGroup)) == ScriptingImplementation.IL2CPP)
+                {
+                    PuertsIl2cpp.Editor.Generator.UnityMenu.GenV2();
+                }
+                else
+                {
+                    Puerts.Editor.Generator.UnityMenu.GenV1();
+                }
                 Gen.GenModule();
 
                 var tasks = XPrefs.GetStrings(Prefs.Tasks, Prefs.TasksDefault);
@@ -288,7 +296,14 @@ namespace EFramework.Puer.Editor
             void XEditor.Event.Internal.OnPreprocessBuild.Process(params object[] args)
             {
                 Puerts.Editor.Generator.UnityMenu.ClearAll();
-                Puerts.Editor.Generator.UnityMenu.GenV1();
+                if (PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.selectedBuildTargetGroup)) == ScriptingImplementation.IL2CPP)
+                {
+                    PuertsIl2cpp.Editor.Generator.UnityMenu.GenV2();
+                }
+                else
+                {
+                    Puerts.Editor.Generator.UnityMenu.GenV1();
+                }
 
                 var srcDir = XFile.PathJoin(XPrefs.GetString(Prefs.Output, Prefs.OutputDefault), XPrefs.GetString(XEnv.Prefs.Channel, XEnv.Prefs.ChannelDefault), XEnv.Platform.ToString());
                 if (!XFile.HasDirectory(srcDir))
