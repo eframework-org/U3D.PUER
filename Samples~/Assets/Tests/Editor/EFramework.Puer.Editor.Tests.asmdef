@@ -1,6 +1,5 @@
 {
     "name": "EFramework.Puer.Editor.Tests",
-    "rootNamespace": "",
     "references": [
         "EFramework.Puer",
         "EFramework.Utility",
@@ -9,15 +8,10 @@
         "com.tencent.puerts.core.Editor",
         "EFramework.Puer.Editor"
     ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
     "includePlatforms": [
         "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+    ]
 }

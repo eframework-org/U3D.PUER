@@ -1,22 +1,14 @@
 {
     "name": "EFramework.Puer.Tests",
-    "rootNamespace": "",
     "references": [
-        "EFramework.Editor",
-        "EFramework.Utility",
         "com.tencent.puerts.core",
         "com.tencent.puerts.ts-loader",
-        "UnityEngine.TestRunner",
+        "EFramework.Editor",
+        "EFramework.Utility",
         "EFramework.Puer",
         "EFramework.Puer.Editor"
     ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
 }
