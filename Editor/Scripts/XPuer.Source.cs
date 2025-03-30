@@ -387,8 +387,7 @@ namespace EFramework.Puer.Editor
             /// 使用配置的编辑器打开源文件根目录。
             /// </summary>
             [MenuItem("Tools/PuerTS/Open Project")]
-            [MenuItem("Assets/PuerTS/Open Project")]
-            [MenuItem("Assets/Open TS Project #m")]
+            [MenuItem("Assets/PuerTS/Open Project #m")]
             internal static void Open() { Open(XPrefs.GetString(Prefs.Path, Prefs.PathDefault)); }
 
             /// <summary>

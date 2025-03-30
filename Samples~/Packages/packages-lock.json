@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.tencent.puerts.core": {
-      "version": "2.2.0",
+      "version": "2.1.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -250,7 +250,7 @@
       "depth": 0,
       "source": "local",
       "dependencies": {
-        "com.tencent.puerts.core": "2.2.0",
+        "com.tencent.puerts.core": "2.1.2",
         "com.tencent.puerts.ts-loader": "2.0.5",
         "org.eframework.u3d.util": "0.0.2",
         "org.eframework.u3d.edit": "0.0.2"

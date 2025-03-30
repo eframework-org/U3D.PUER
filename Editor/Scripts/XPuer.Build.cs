@@ -193,11 +193,12 @@ namespace EFramework.Puer.Editor
             /// <param name="report">构建报告对象</param>
             public override void Process(XEditor.Tasks.Report report)
             {
-                if (PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.selectedBuildTargetGroup)) == ScriptingImplementation.IL2CPP)
-                {
-                    PuertsIl2cpp.Editor.Generator.UnityMenu.GenV2();
-                }
-                else
+                // if (PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.selectedBuildTargetGroup)) == ScriptingImplementation.IL2CPP)
+                // {
+                //     Puerts.Editor.Generator.UnityMenu.GenerateDTS();
+                //     PuertsIl2cpp.Editor.Generator.UnityMenu.GenV2();
+                // }
+                // else
                 {
                     Puerts.Editor.Generator.UnityMenu.GenV1();
                 }
@@ -296,11 +297,12 @@ namespace EFramework.Puer.Editor
             void XEditor.Event.Internal.OnPreprocessBuild.Process(params object[] args)
             {
                 Puerts.Editor.Generator.UnityMenu.ClearAll();
-                if (PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.selectedBuildTargetGroup)) == ScriptingImplementation.IL2CPP)
-                {
-                    PuertsIl2cpp.Editor.Generator.UnityMenu.GenV2();
-                }
-                else
+                // if (PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.selectedBuildTargetGroup)) == ScriptingImplementation.IL2CPP)
+                // {
+                //     Puerts.Editor.Generator.UnityMenu.GenerateDTS();
+                //     PuertsIl2cpp.Editor.Generator.UnityMenu.GenV2();
+                // }
+                // else
                 {
                     Puerts.Editor.Generator.UnityMenu.GenV1();
                 }

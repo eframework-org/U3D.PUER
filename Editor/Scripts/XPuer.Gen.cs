@@ -1133,12 +1133,13 @@ $@"{{
                         if (XFile.HasDirectory(output) == false || Directory.GetFiles(output).Length == 0)
                         {
                             dirty = true;
-                            if (PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.selectedBuildTargetGroup)) == ScriptingImplementation.IL2CPP)
-                            {
-                                PuertsIl2cpp.Editor.Generator.UnityMenu.GenV2();
-                                XLog.Debug("XPuer.Gen: invoke Tools/PuerTS/Generate For xIl2cpp mode (all in one with full wrapper) automatically.");
-                            }
-                            else
+                            // if (PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.selectedBuildTargetGroup)) == ScriptingImplementation.IL2CPP)
+                            // {
+                            //     Puerts.Editor.Generator.UnityMenu.GenerateDTS();
+                            //     PuertsIl2cpp.Editor.Generator.UnityMenu.GenV2();
+                            //     XLog.Debug("XPuer.Gen: invoke Tools/PuerTS/Generate For xIl2cpp mode (all in one with full wrapper) automatically.");
+                            // }
+                            // else
                             {
                                 Puerts.Editor.Generator.UnityMenu.GenV1();
                                 XLog.Debug("XPuer.Gen: invoke Tools/PuerTS/Generate (all in one) automatically.");
