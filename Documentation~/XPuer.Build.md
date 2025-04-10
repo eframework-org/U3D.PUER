@@ -22,7 +22,7 @@ XPuer.Build 提供了脚本的构建工作流，支持 TypeScript 脚本的编�
 
 关联配置项：`Puer/AssetUri`、`Puer/LocalUri`
 
-以上配置项均可在 `EFramework/Preferences/Puer/Build` 首选项编辑器中进行可视化配置。
+以上配置项均可在 `Tools/EFramework/Preferences/Puer/Build` 首选项编辑器中进行可视化配置。
 
 ### 2. 自动化流程
 

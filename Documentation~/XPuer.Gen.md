@@ -38,7 +38,7 @@ XPuer.Gen 提供了代码生成工具，支持 PuerTS 绑定代码的生成、�
   - 检测到 package-lock.json 变化时会触发安装
   - 自动执行 `npm install` 安装依赖
 
-以上配置项均可在 `EFramework/Preferences/Puer/Gen` 首选项编辑器中进行可视化配置。
+以上配置项均可在 `Tools/EFramework/Preferences/Puer/Gen` 首选项编辑器中进行可视化配置。
 
 ### 2. 类型绑定
 

@@ -36,7 +36,7 @@ XPuer.Prefs 提供了运行时的首选项管理，用于控制运行模式、�
 | 本地资源 | `Puer/LocalUri` | `Scripts/TS` | 设置脚本包的本地路径，用于运行时的加载 |
 | 远端资源 | `Puer/RemoteUri` | `${Prefs.Update/PatchUri}/Scripts/TS` | 设置脚本包的远端路径，用于资源的下载 |
 
-以上配置项均可在 `EFramework/Preferences/Puer` 首选项编辑器中进行可视化配置。
+以上配置项均可在 `Tools/EFramework/Preferences/Puer` 首选项编辑器中进行可视化配置。
 
 ## 常见问题
 

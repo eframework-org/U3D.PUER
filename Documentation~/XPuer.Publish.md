@@ -23,7 +23,7 @@ XPuer.Publish 实现了脚本包的发布工作流，用于将打包好的脚本
 
 关联配置项：`Puer/LocalUri`、`Puer/RemoteUri`
 
-以上配置项均可在 `EFramework/Preferences/Puer/Publish` 首选项编辑器中进行可视化配置。
+以上配置项均可在 `Tools/EFramework/Preferences/Puer/Publish` 首选项编辑器中进行可视化配置。
 
 ### 2. 自动化流程
 

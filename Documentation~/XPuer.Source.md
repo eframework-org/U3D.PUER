@@ -36,7 +36,7 @@ XPuer.Source 实现了源文件管理系统，用于 TypeScript 源文件的解�
     - `IDEA`：使用 IntelliJ IDEA
   - 根据选择的编辑器自动配置打开方式
 
-以上配置项均可在 `EFramework/Preferences/Puer/Source` 首选项编辑器中进行可视化配置。
+以上配置项均可在 `Tools/EFramework/Preferences/Puer/Source` 首选项编辑器中进行可视化配置。
 
 ### 2. 文件管理
 
