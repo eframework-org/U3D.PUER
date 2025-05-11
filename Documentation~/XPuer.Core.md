@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/org.eframework.u3d.puer)](https://www.npmjs.com/package/org.eframework.u3d.puer)
 [![Downloads](https://img.shields.io/npm/dm/org.eframework.u3d.puer)](https://www.npmjs.com/package/org.eframework.u3d.puer)
+[![DeepWiki](https://img.shields.io/badge/DeepWiki-Explore-blue)](https://deepwiki.com/eframework-org/U3D.PUER)
 
 XPuer.Core 提供了 JavaScript 虚拟机的运行时环境，支持事件系统管理、生命周期控制和脚本调试等功能。
 

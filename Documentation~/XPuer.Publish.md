@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/org.eframework.u3d.puer)](https://www.npmjs.com/package/org.eframework.u3d.puer)
 [![Downloads](https://img.shields.io/npm/dm/org.eframework.u3d.puer)](https://www.npmjs.com/package/org.eframework.u3d.puer)
+[![DeepWiki](https://img.shields.io/badge/DeepWiki-Explore-blue)](https://deepwiki.com/eframework-org/U3D.PUER)
 
 XPuer.Publish 实现了脚本包的发布工作流，用于将打包好的脚本发布至对象存储服务（OSS）中。
 

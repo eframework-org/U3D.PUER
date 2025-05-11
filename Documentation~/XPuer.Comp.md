@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/org.eframework.u3d.puer)](https://www.npmjs.com/package/org.eframework.u3d.puer)
 [![Downloads](https://img.shields.io/npm/dm/org.eframework.u3d.puer)](https://www.npmjs.com/package/org.eframework.u3d.puer)
+[![DeepWiki](https://img.shields.io/badge/DeepWiki-Explore-blue)](https://deepwiki.com/eframework-org/U3D.PUER)
 
 XPuer.Comp 提供了 MonoBehaviour 的 TypeScript 扩展实现，用于管理组件的生命周期、序列化和事件系统。
 

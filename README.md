@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/org.eframework.u3d.puer)](https://www.npmjs.com/package/org.eframework.u3d.puer)
 [![Downloads](https://img.shields.io/npm/dm/org.eframework.u3d.puer)](https://www.npmjs.com/package/org.eframework.u3d.puer)
+[![DeepWiki](https://img.shields.io/badge/DeepWiki-Explore-blue)](https://deepwiki.com/eframework-org/U3D.PUER)
 
 EFramework Puer for Unity 是一个基于 PuerTS 的扩展模块，提供了简单易用的 PuerBehaviour 组件和完整的 TypeScript 开发工作流，优化了脚本调试和自动化打包。
 
