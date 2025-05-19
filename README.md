@@ -26,4 +26,4 @@ EFramework Puer for Unity 是一个基于 PuerTS 的扩展模块，提供了简�
 
 - [更新记录](CHANGELOG.md)
 - [贡献指南](CONTRIBUTING.md)
-- [许可证](LICENSE.md) 
+- [许可证](LICENSE.md)
