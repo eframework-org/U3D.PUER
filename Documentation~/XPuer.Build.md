@@ -41,7 +41,7 @@ stateDiagram-v2
 
 在 `Puer/Build/Output@Editor` 目录下会生成以下文件：
 - `*.jsc`：脚本包文件，格式为 `path_to_scripts.jsc`
-- `Manifest.md5`：脚本包清单，格式为 `名称|MD5|大小`
+- `Manifest.db`：脚本包清单，格式为 `名称|MD5|大小`
 
 构建产物会在内置构建事件 `XEditor.Event.Internal.OnPreprocessBuild` 触发时内置于安装包的资源目录下：
 

@@ -5,12 +5,12 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEditor;
+using UnityEngine.UIElements;
+using UnityEditor.Build.Reporting;
 using EFramework.Utility;
 using EFramework.Editor;
-using UnityEditor;
-using UnityEditor.Build;
-using UnityEditor.Build.Reporting;
-using UnityEngine;
 using static EFramework.Puer.XPuer;
 
 namespace EFramework.Puer.Editor
@@ -49,7 +49,7 @@ namespace EFramework.Puer.Editor
         /// 
         /// 在 Puer/Build/Output@Editor 目录下会生成以下文件：
         /// - *.jsc：脚本包文件，格式为 path_to_scripts.jsc
-        /// - Manifest.md5：脚本包清单，格式为 名称|MD5|大小
+        /// - Manifest.db：脚本包清单，格式为 名称|MD5|大小
         /// 
         /// 构建产物会在内置构建事件 XEditor.Event.Internal.OnPreprocessBuild 触发时内置于安装包的资源目录下：
         /// 
@@ -78,7 +78,7 @@ namespace EFramework.Puer.Editor
             /// - Output：脚本输出路径
             /// - Tasks：构建任务列表
             /// </remarks>
-            internal class Prefs : EFramework.Puer.XPuer.Prefs
+            internal class Prefs : Puer.XPuer.Prefs
             {
                 /// <summary>
                 /// 输入路径的配置键。
@@ -128,6 +128,13 @@ namespace EFramework.Puer.Editor
                 public override int Priority => 301;
 
                 [SerializeField] internal string[] tasks;
+                [NonSerialized] SerializedObject serialized;
+
+                public override void OnActivate(string searchContext, VisualElement rootElement)
+                {
+                    serialized = new SerializedObject(this);
+                    base.OnActivate(searchContext, rootElement);
+                }
 
                 /// <summary>
                 /// 可视化首选项设置。
@@ -136,7 +143,7 @@ namespace EFramework.Puer.Editor
                 /// <param name="searchContext">搜索上下文</param>
                 public override void OnVisualize(string searchContext)
                 {
-                    var serialized = new SerializedObject(this);
+                    serialized.Update();
 
                     EditorGUILayout.BeginVertical(EditorStyles.helpBox);
                     foldout = EditorGUILayout.Foldout(foldout, new GUIContent("Build", "Puer Build Options."));
