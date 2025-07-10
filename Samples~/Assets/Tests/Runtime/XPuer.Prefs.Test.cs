@@ -29,7 +29,7 @@ public class TestXPuerPrefs
         Assert.AreEqual(Prefs.DebugPortDefault, 9222);
         Assert.AreEqual(Prefs.AssetUriDefault, "Patch@Scripts@TS.zip");
         Assert.AreEqual(Prefs.LocalUriDefault, "Scripts/TS");
-        Assert.AreEqual(Prefs.RemoteUriDefault, "${Prefs.Update/PatchUri}/Scripts/TS");
+        Assert.AreEqual(Prefs.RemoteUriDefault, "Builds/Patch/${Env.Author}/${Env.Version}/${Env.Platform}/Scripts/TS");
     }
 }
 #endif

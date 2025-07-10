@@ -1151,19 +1151,23 @@ $@"{{
                     {
                         var pkgLock = Path.Combine(XEnv.ProjectPath, "package-lock.json");
                         var pkgMd5 = Path.Combine(XEnv.ProjectPath, "package-lock.md5");
+                        var modulesDir = XFile.PathJoin(XEnv.ProjectPath, "node_modules");
+
                         var install = false;
-                        if (!XFile.HasFile(pkgLock) || !XFile.HasFile(pkgMd5)) install = true;
+                        if (!XFile.HasFile(pkgLock) || !XFile.HasFile(pkgMd5) || !XFile.HasDirectory(modulesDir)) install = true;
                         else
                         {
                             var localMd5 = XFile.OpenText(pkgMd5);
                             var realMd5 = XFile.FileMD5(pkgLock);
                             if (localMd5 != realMd5) install = true;
                         }
+
                         if (install)
                         {
                             dirty = true;
-                            XEditor.Cmd.Run(bin: XEditor.Cmd.Find("npm"), args: new string[] { "install" }).Wait();
-                            if (XFile.HasFile(pkgLock) && XFile.HasDirectory(Path.Combine(XEnv.ProjectPath, "node_modules")))
+                            var result = XEditor.Cmd.Run(bin: XEditor.Cmd.Find("npm"), args: new string[] { "install" });
+                            result.Wait();
+                            if (result.Result.Code == 0 && XFile.HasFile(pkgLock) && XFile.HasDirectory(modulesDir))
                             {
                                 XFile.SaveText(pkgMd5, XFile.FileMD5(pkgLock));
                                 XLog.Debug("XPuer.Gen: node_modules has been installed.");

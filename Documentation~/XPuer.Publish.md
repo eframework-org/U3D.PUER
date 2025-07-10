@@ -67,25 +67,10 @@ stateDiagram-v2
     对比本地清单 --> 发布差异文件
 ```
 
-##### 发布规则
 发布时根据清单对比结果进行增量上传：
 - 新增文件：`文件名@MD5`
 - 修改文件：`文件名@MD5`
-- 清单文件：`Manifest.db` 和 `Manifest.db@yyyy-MM-dd_HH-mm-ss`（用于版本回退）
-
-##### 路径说明
-1. 本地路径
-   - 构建目录：`${Prefs.Output}/${Channel}/${Platform}`
-     - 示例：`Builds/Patch/Scripts/TS/Default/Windows`
-   - 临时目录：`${Temp}/${Prefs.LocalUri}`
-     - 示例：`Temp/Scripts/TS`
-
-2. 远端路径
-   - 远端目录：`${Prefs.RemoteUri}`
-     - 配置键：`Puer/RemoteUri`
-     - 默认值：`${Prefs.Update/PatchUri}/Scripts/TS/Default/Windows`
-   - 完整路径：`${Alias}/${Bucket}/${Remote}/`
-     - 示例：`myminio/default/Builds/Patch/Scripts/TS/Default/Windows`
+- 清单文件：`Manifest.db` 和 `Manifest.db@MD5`（用于版本记录）
 
 ## 常见问题
 

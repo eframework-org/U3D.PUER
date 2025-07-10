@@ -188,6 +188,7 @@ namespace Plugins.Puer.Editor
                 "UnityEngine.InputRegistering",
                 "UnityEngine.QualitySettings",
                 "UnityEngine.ClusterSerialization",
+                "UnityEngine.VulkanDeviceFilterLists",
 
                  //System
                 "System.Tuple",
