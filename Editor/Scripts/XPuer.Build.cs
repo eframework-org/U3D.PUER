@@ -72,12 +72,6 @@ namespace EFramework.Puer.Editor
             /// <summary>
             /// 发布构建的首选项设置类。
             /// </summary>
-            /// <remarks>
-            /// 提供以下配置项：
-            /// - Input：脚本源文件路径
-            /// - Output：脚本输出路径
-            /// - Tasks：构建任务列表
-            /// </remarks>
             internal class Prefs : Puer.XPuer.Prefs
             {
                 /// <summary>

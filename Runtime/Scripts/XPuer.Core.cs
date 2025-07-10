@@ -170,12 +170,6 @@ namespace EFramework.Puer
         /// <summary>
         /// 事件类型枚举，定义了 PuerTS 初始化过程中的关键事件。
         /// </summary>
-        /// <remarks>
-        /// 事件触发顺序：
-        /// 1. OnPreInit：预初始化阶段，用于准备环境和资源
-        /// 2. OnVMStart：虚拟机启动阶段，用于配置和启动 JavaScript 虚拟机
-        /// 3. OnPostInit：后初始化阶段，用于加载模块和完成初始化
-        /// </remarks>
         public enum EventType
         {
             /// <summary>
@@ -238,23 +232,6 @@ namespace EFramework.Puer
         /// <param name="handler">处理程序接口，用于管理初始化过程</param>
         /// <returns>一个 IEnumerator，用于协程支持</returns>
         /// <exception cref="ArgumentNullException">当 handler 或 handler.Loader 为 null 时抛出</exception>
-        /// <remarks>
-        /// 初始化流程：
-        /// 1. 预初始化阶段：
-        ///    - 执行 handler.OnPreInit
-        ///    - 触发 OnPreInit 事件
-        /// 2. 虚拟机启动阶段：
-        ///    - 创建并配置 JavaScript 虚拟机
-        ///    - 执行 handler.OnVMStart
-        ///    - 触发 OnVMStart 事件
-        /// 3. 后初始化阶段：
-        ///    - 加载核心模块
-        ///    - 执行 handler.OnPostInit
-        ///    - 触发 OnPostInit 事件
-        /// 4. 调试配置（仅编辑器模式）：
-        ///    - 等待调试器连接
-        ///    - 显示进度条
-        /// </remarks>
         public static IEnumerator Initialize(IHandler handler)
         {
             if (handler == null) throw new ArgumentNullException("handler");

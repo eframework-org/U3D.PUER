@@ -92,20 +92,6 @@ namespace EFramework.Puer.Editor
             /// PuerTS 脚本发布的首选项设置。
             /// 提供了 OSS 服务配置和发布选项的管理功能。
             /// </summary>
-            /// <remarks>
-            /// <code>
-            /// 配置项说明
-            /// 1. OSS 服务
-            /// - Host: OSS 主机地址
-            /// - Bucket: OSS 存储桶名称
-            /// - Access: OSS 访问密钥
-            /// - Secret: OSS 秘密密钥
-            /// 
-            /// 2. 默认值
-            /// - 支持环境变量替换
-            /// - 使用 ${Env.xxx} 格式引用环境变量
-            /// </code>
-            /// </remarks>
             internal class Prefs : Build.Prefs
             {
                 /// <summary>

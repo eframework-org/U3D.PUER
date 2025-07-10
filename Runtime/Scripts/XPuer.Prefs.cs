@@ -155,16 +155,6 @@ namespace EFramework.Puer
             /// 在 Unity 编辑器中提供可视化的配置界面。
             /// </summary>
             /// <param name="searchContext">搜索上下文</param>
-            /// <remarks>
-            /// 提供以下配置项：
-            /// - Release：发布模式开关
-            /// - Debug：调试模式开关（仅在非发布模式下可用）
-            /// - Wait：调试等待开关（仅在调试模式下可用）
-            /// - Port：调试端口设置（仅在调试模式下可用）
-            /// - Asset：脚本资源的打包路径
-            /// - Local：脚本资源的本地路径
-            /// - Remote：脚本资源的远程路径
-            /// </remarks>
             public override void OnVisualize(string searchContext)
             {
                 var releaseMode = Target.GetBool(ReleaseMode, ReleaseModeDefault);

@@ -237,15 +237,6 @@ namespace EFramework.Puer
             /// </summary>
             /// <param name="assetPath">资源的路径</param>
             /// <returns>生成的标签名称，格式为小写字母，使用下划线连接路径段</returns>
-            /// <remarks>
-            /// 生成规则：
-            /// 1. 如果路径不包含斜杠，返回 "default.jsc"
-            /// 2. 否则使用目录名生成标签：
-            ///    - 将路径分隔符替换为下划线
-            ///    - 移除特殊字符
-            ///    - 转换为小写
-            ///    - 添加 .jsc 扩展名
-            /// </remarks>
             public static string GenTag(string assetPath)
             {
                 assetPath = XFile.NormalizePath(assetPath);

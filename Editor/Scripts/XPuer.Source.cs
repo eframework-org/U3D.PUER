@@ -104,21 +104,7 @@ namespace EFramework.Puer.Editor
             /// PuerTS 源文件的首选项设置。
             /// 提供源文件路径和编辑器工具的配置选项。
             /// </summary>
-            /// <remarks>
-            /// <code>
-            /// 配置项说明
-            /// 1. 源文件设置
-            /// - Path: 源文件根目录路径
-            /// - Tool: 编辑器工具选择
-            /// 
-            /// 2. 编辑器类型
-            /// - Auto: 自动选择合适的编辑器
-            /// - Code: Visual Studio Code
-            /// - Cursor: Cursor 编辑器
-            /// - IDEA: IntelliJ IDEA
-            /// </code>
-            /// </remarks>
-            internal class Prefs : EFramework.Puer.XPuer.Prefs
+            internal class Prefs : Puer.XPuer.Prefs
             {
                 /// <summary>
                 /// 编辑器类型枚举。

@@ -10,7 +10,6 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEditor;
-using UnityEditor.Build;
 using Puerts;
 using Puerts.Editor.Generator.DTS;
 using EFramework.Editor;
@@ -185,27 +184,7 @@ namespace EFramework.Puer.Editor
             /// PuerTS 代码生成器的首选项设置。
             /// 提供了代码生成和模块安装的配置选项。
             /// </summary>
-            /// <remarks>
-            /// <code>
-            /// 功能特性
-            /// - 配置代码生成输出路径
-            /// - 控制自动生成和安装行为
-            /// - 提供可视化的设置界面
-            /// 
-            /// 使用手册
-            /// 1. 路径配置
-            /// 1.1 输出路径
-            ///     设置生成代码的输出目录，默认为 Assets/Plugins/Puer/Gen/。
-            /// 
-            /// 2. 自动化配置
-            /// 2.1 自动生成
-            ///     控制项目加载时是否自动生成代码。
-            /// 
-            /// 2.2 自动安装
-            ///     控制项目加载时是否自动安装模块。
-            /// </code>
-            /// </remarks>
-            internal class Prefs : EFramework.Puer.XPuer.Prefs
+            internal class Prefs : Puer.XPuer.Prefs
             {
                 /// <summary>
                 /// 代码生成输出路径的配置键。
