@@ -45,16 +45,29 @@
         "**/*.unity": true,
         "build/": true,
         "Build/": true,
+        "Builds/": true,
+        "Local": true,
         "Library/": true,
         "library/": true,
         "obj/": true,
         "Obj/": true,
         "Logs/": true,
         "logs/": true,
-        "ProjectSettings/": true,
         "UserSettings/": true,
         "temp/": true,
-        "Temp/": true
+        "Temp/": true,
+        "node_modules": true
+    },
+    "files.associations": {
+        "*.asset": "yaml",
+        "*.meta": "yaml",
+        "*.prefab": "yaml",
+        "*.unity": "yaml",
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "*.sln": "*.csproj",
+        "package.json": "package-lock*"
     },
     "dotnet.defaultSolution": "Samples~.sln"
 }

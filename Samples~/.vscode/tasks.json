@@ -24,10 +24,10 @@
                 }
             },
             "linux": {
-                "command": "chmod +x ./unity.sh && ./unity.sh"
+                "command": "./unity.sh"
             },
             "osx": {
-                "command": "chmod +x ./unity.sh && ./unity.sh"
+                "command": "./unity.sh"
             },
             "presentation": {
                 "reveal": "always",
@@ -76,10 +76,10 @@
                 }
             },
             "linux": {
-                "command": "chmod +x ./unity.sh && ./unity.sh"
+                "command": "./unity.sh"
             },
             "osx": {
-                "command": "chmod +x ./unity.sh && ./unity.sh"
+                "command": "./unity.sh"
             },
             "presentation": {
                 "reveal": "always",
