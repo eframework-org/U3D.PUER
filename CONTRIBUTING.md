@@ -29,64 +29,65 @@
 
 ### 1. 目录结构
 ```
-<Root>/                                    # 项目目录
+<Root>/                                            # 项目目录
 │
-├── .github/                               # 工作流目录
-│   └── workflows/*.yml                    # 工作流脚本
+├── .github/                                       # 工作流目录
+│   └── workflows/*.yml                            # 工作流脚本
 │
-├── .puer/                                 # Puer模块目录
+├── .puer/                                         # Puer 模块目录
 │
-├── Editor/                                # 编辑器目录
-│   ├── Scripts/                           # 编辑器脚本
-│   │   ├── <Module1>.cs                   # 编辑器模块1实现
-│   │   ├── <Module1>.Part02.cs            # 编辑器模块1实现2
-│   │   ├── <Module2>.cs                   # 编辑器模块2实现
+├── Editor/                                        # 编辑器目录
+│   ├── Scripts/                                   # 编辑器脚本
+│   │   ├── <Module1>.cs                           # 编辑器模块1实现
+│   │   ├── <Module1>.Part02.cs                    # 编辑器模块1实现2
+│   │   ├── <Module2>.cs                           # 编辑器模块2实现
 │   │   └── ...
-│   │
-│   └── Resources/                         # 编辑器资源
+│   └── Resources/                                 # 编辑器资源
 │
-├── Runtime/                               # 运行时目录
-│   ├── Scripts/                           # 运行时脚本
-│   │   ├── <Module1>.cs                   # 运行时模块1实现
-│   │   ├── <Module1>.Part02.cs            # 运行时模块2实现2
-│   │   ├── <Module2>.cs                   # 运行时模块2实现
+├── Runtime/                                       # 运行时目录
+│   ├── Scripts/                                   # 运行时脚本
+│   │   ├── <Module1>.cs                           # 运行时模块1实现
+│   │   ├── <Module1>.Part02.cs                    # 运行时模块2实现2
+│   │   ├── <Module2>.cs                           # 运行时模块2实现
 │   │   └── ...
-│   │
-│   └── Resources/                         # 运行时资源
-│
-├── Tests/                                 # 测试目录
-│   ├── Editor/                            # 编辑器目录
-│   │   ├── Scripts/                       # 编辑器脚本
-│   │   │    ├── <Module1>.Test.cs         # 编辑器模块1测试
-│   │   │    ├── <Module1>.Part02.Test.cs  # 编辑器模块1测试2
-│   │   │    ├── <Module2>.Test.cs         # 编辑器模块2测试
-│   │   │    └── ...
-│   │   │
-│   │   └── Resources/                     # 编辑器资源
-│   │
-│   │── Runtime/ # 运行时目录
-│   │   ├── Scripts/                       # 运行时脚本
-│   │   │    ├── <Module1>.Test.cs         # 运行时模块1测试
-│   │   │    ├── <Module1>.Part02.Test.cs  # 运行时模块1测试2
-│   │   │    └── ...
-│   │   │
-│   │   └── Resources/                     # 运行时资源
-│
-├── Samples~/                              # 示例目录
-│   ├── Sample1/                           # 示例1目录
-│   ├── Sample2/                           # 示例2目录
+│   ├── Resources/                                 # 运行时资源
 │   └── ...
 │
-├── Documentation~/                        # 文档目录
-│   ├── <Module1>.md                       # 模块1文档
-│   ├── <Module2>.md                       # 模块2文档
+├── Documentation~/                                # 文档目录
+│   ├── <Module1>.md                               # 模块1文档
+│   ├── <Module2>.md                               # 模块2文档
 │   └── ...
 │
-├── README.md                              # 项目文档
-├── CHANGELOG.md                           # 更新记录
-├── CONTRIBUTING.md                        # 贡献指南
-├── LICENSE.md                             # 开源协议
-└── package.json                           # 项目描述
+├── Samples~/                                      # 示例项目
+│   ├── Assets/
+│   │   ├── Tests/                                 # 测试目录
+│   │   │   ├── Editor/                            # 编辑器目录
+│   │   │   │   ├── Scripts/                       # 编辑器脚本
+│   │   │   │   │    ├── <Module1>.Test.cs         # 编辑器模块1测试
+│   │   │   │   │    ├── <Module1>.Part02.Test.cs  # 编辑器模块1测试2
+│   │   │   │   │    ├── <Module2>.Test.cs         # 编辑器模块2测试
+│   │   │   │   │    └── ...
+│   │   │   │   └── Resources/                     # 编辑器资源
+│   │   │   │
+│   │   │   │── Runtime/ # 运行时目录
+│   │   │   │   ├── Scripts/                       # 运行时脚本
+│   │   │   │   │    ├── <Module1>.Test.cs         # 运行时模块1测试
+│   │   │   │   │    ├── <Module1>.Part02.Test.cs  # 运行时模块1测试2
+│   │   │   │   │    └── ...
+│   │   │   │   └── Resources/                     # 运行时资源
+│   │   │   └── ...
+│   │   └── ...
+│   │
+│   ├── Packages/manifest.json                     # 示例依赖
+│   └── ...
+│
+├── CHANGELOG.md                                   # 更新记录
+├── CONTRIBUTING.md                                # 贡献指南
+├── LICENSE.md                                     # 开源协议
+├── package.json                                   # 项目描述
+├── README.md                                      # 项目文档
+├── Third Party Notices.md                         # 依赖说明
+└── ...
 ```
 
 ### 2. 命名规范
