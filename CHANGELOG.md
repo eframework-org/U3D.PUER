@@ -4,6 +4,7 @@
 ### 变更
 - 完善 Gen 模块的 node_modules 安装检测逻辑
 - 修改 Puer/RemoteUri 的默认值为 Builds/Patch/${Env.Author}/${Env.Version}/${Env.Platform}/Scripts/TS
+- 修改 XPuer.Comp 为 PuerBehaviour 以兼容 Unity 2021 版本的组件序列化
 
 ### 修复
 - 修复首选项编辑器在 Unity 2021 版本的数组序列化问题
